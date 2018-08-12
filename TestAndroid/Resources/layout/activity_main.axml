@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/depart_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_below="@id/depart_edittext"
+            android:id="@+id/but_get_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get all" />
+        <Button
+            android:layout_below="@id/depart_edittext"
+            android:layout_toRightOf="@id/but_get_all"
+            android:id="@+id/but_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update" />
+        <Button
+            android:layout_below="@id/depart_edittext"
+            android:layout_toRightOf="@id/but_update"
+            android:id="@+id/but_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete" />
+        <Button
+            android:layout_below="@id/depart_edittext"
+            android:layout_toRightOf="@id/but_delete"
+            android:id="@+id/but_add_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add new" />
+    </RelativeLayout>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/first_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/list_series" />
+</RelativeLayout>
